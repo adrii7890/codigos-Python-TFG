@@ -1,19 +1,4 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[4]:
-
-
 import math
-
-
-# In[5]:
-
-
-import time
-
-
-# In[28]:
 
 
 def NRfloor(n): #Calculo de la función suelo de la raiz cuadrada mediante el método de Newton
@@ -23,10 +8,6 @@ def NRfloor(n): #Calculo de la función suelo de la raiz cuadrada mediante el m�
         x = y
         y = math.floor((x + n / x) / 2)
     return x
-
-
-# In[31]:
-
 
 def trialdiv(n):
     L=[]
@@ -41,20 +22,3 @@ def trialdiv(n):
     else: 
         L.append(n)
         return L
-
-
-# In[41]:
-
-
-inicio=time.time()
-p=trialdiv(189988612)
-print(p)
-fin=time.time()
-print(fin-inicio)
-
-
-# In[ ]:
-
-
-
-
