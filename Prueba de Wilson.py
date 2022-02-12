@@ -1,14 +1,4 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[1]:
-
-
 import math
-
-
-# In[17]:
-
 
 def pruebaWilson(n):
     x=math.factorial(n-1)+1
@@ -16,4 +6,3 @@ def pruebaWilson(n):
         return True
     else:
         return False
-
