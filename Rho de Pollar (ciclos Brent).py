@@ -1,20 +1,4 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[1]:
-
-
 import math
-
-
-# In[2]:
-
-
-import time
-
-
-# In[16]:
-
 
 def PollardpB (n,x0,M):
     a=x0
@@ -34,20 +18,3 @@ def PollardpB (n,x0,M):
         return [d,int(n/d)]
     else:
         return 0
-
-
-# In[31]:
-
-
-inicio=time.time()
-m=PollardpB(25769,2,12)
-print(m)
-fin=time.time()
-print(fin-inicio)
-
-
-# In[ ]:
-
-
-
-
