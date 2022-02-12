@@ -85,7 +85,7 @@ def Dixon(n,N,M): #primera parte del método de Dixon, la "recolección de datos
     W=[]
     i=0
     #Búsqueda de números lisos para nuestra base de factores
-    while i<N:
+    while i<N and len(Z)<=len(base):
         z=L[i]
         w=z**2%n 
         if Bsmooth(w,M)==True:
