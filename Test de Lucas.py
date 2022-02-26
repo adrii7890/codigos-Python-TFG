@@ -1,10 +1,5 @@
-#!/usr/bin/env python
-# coding: utf-8
 
-# In[27]:
-
-
-def exprapID(base, num, mod):
+def exprapID(base, num, mod): #algoritmo de la exponenciación rápida (variante izquierda a derecha)
     acu=1
     binary=format(num,"b")
     i=0
@@ -17,10 +12,6 @@ def exprapID(base, num, mod):
             exp+=1
         i+=1
     return acu
-
-
-# In[31]:
-
 
 def TestLucas(n,L):
     a=2
