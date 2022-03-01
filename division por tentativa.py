@@ -1,7 +1,7 @@
 import math
 
 
-def NRfloor(n): #Calculo de la función suelo de la raiz cuadrada mediante el método de Newton
+def NRsuelo(n): #Calculo de la función suelo de la raiz cuadrada mediante el método de Newton
     x = n
     y = math.floor((x + 1) / 2)
     while y < x:
