@@ -3,13 +3,10 @@ def exprapID(base, num, mod): #algoritmo de la exponenciación rápida (variante
     acu=1
     binary=format(num,"b")
     i=0
-    exp=0
     while i<len(binary):
-        exp*=2
         acu=(acu**2)%mod
         if binary[i]=="1":
             acu=(acu*base)%mod
-            exp+=1
         i+=1
     return acu
 
