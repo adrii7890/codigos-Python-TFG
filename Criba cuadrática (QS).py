@@ -70,7 +70,7 @@ def basef (n,M):
         i+=1
     return B
 
-def QS(n,M1,M2):
+def QS(n,M1,M2): #solo la primera parte del algoritmo, la "recolección de datos"
     z=0
     w=0
     Base=basef(n,M2) #generamos la base de factores
