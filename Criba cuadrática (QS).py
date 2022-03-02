@@ -1,16 +1,5 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[3]:
-
 
 import math
-import numpy as np
-import random
-
-
-# In[4]:
-
 
 def  trialdiv(n):
     L=[]
@@ -28,10 +17,6 @@ def  trialdiv(n):
         L.append(int(n))
         return L 
 
-
-# In[5]:
-
-
 def Bsmooth(n,B):
     smooth=True
     L=trialdiv(n)
@@ -41,10 +26,6 @@ def Bsmooth(n,B):
             smooth=False
         i+=1
     return smooth
-
-
-# In[6]:
-
 
 def exp(n,B):
     L=trialdiv(n)
@@ -71,24 +52,6 @@ def exp(n,B):
         E.append(0)
     return E        
 
-
-# In[7]:
-
-
-def iszero(n):
-    bool=True
-    L=exp(n,[2,3,5,7])
-    i=0
-    while bool==True and i<len(L):
-        if L[i]==1:
-            bool=False
-        i+=1
-    return bool
-
-
-# In[8]:
-
-
 def isprime(n):
     prime=True
     i=2
@@ -98,10 +61,6 @@ def isprime(n):
         i+=1
     return prime
 
-
-# In[9]:
-
-
 def basef (n,M):
     B=[-1,2]
     i=3
@@ -110,10 +69,6 @@ def basef (n,M):
             B.append(i)
         i+=1
     return B
-
-
-# In[1]:
-
 
 def QS(n,M1,M2):
     z=0
