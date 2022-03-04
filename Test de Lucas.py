@@ -7,7 +7,7 @@ def TestLucas(n,L): #L es una lista con los divisores de n-1
             return False
         else:
             while i<len(L) and bool=True:
-                if exprapID(2,int((n-1)/L[i]),n)==1:
+                if exprapID(2,int((n-1)/L[i]),n)==1: #usamos el algoritmo de la exponenciación rápida, cuyo código se puede ver también en este repositorio
                     bool=False
                 i+=1
         if bool==True:
