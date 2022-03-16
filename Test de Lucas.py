@@ -1,7 +1,7 @@
 def TestLucas(n,L): #L es una lista con los divisores de n-1
     a=2
-    i=0
     while a<n:     
+        i=0
         bool=True
         if exprapID(2, n-1,n)!=1:
             return False
@@ -12,5 +12,6 @@ def TestLucas(n,L): #L es una lista con los divisores de n-1
                 i+=1
         if bool==True:
             return True
+        a+=1
     return False
 
