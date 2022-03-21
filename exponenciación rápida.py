@@ -1,8 +1,8 @@
 
-def exprapID(base, num, mod): #algoritmo de la exponenciación rápida (variante izquierda a derecha)
-    acu=1
+def binladders(base, num, mod): #algoritmo de la exponenciación rápida (variante izquierda a derecha)
+    acu=base
     binary=format(num,"b")
-    i=0
+    i=1
     while i<len(binary):
         acu=(acu**2)%mod
         if binary[i]=="1":
