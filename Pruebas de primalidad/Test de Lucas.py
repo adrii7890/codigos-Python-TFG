@@ -7,7 +7,7 @@ def TestLucas(n,L): #L es una lista con los divisores de n-1
             return False
         else:
             while i<len(L) and bool=True:
-                if binladders(2,int((n-1)/L[i]),n)==1: 
+                if binladders(2,(n-1)//L[i],n)==1: 
                     bool=False
                 i+=1
         if bool==True:
