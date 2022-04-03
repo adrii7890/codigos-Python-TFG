@@ -1,5 +1,5 @@
 import math
-import random
+from random import randrange
 
 def  trialdiv(n):
     L=[]
