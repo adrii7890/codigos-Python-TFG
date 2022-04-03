@@ -1,7 +1,7 @@
-import math
+from math import factorial
 
 def pruebaWilson(n):
-    x=math.factorial(n-1)+1
+    x=factorial(n-1)+1
     if x%n==0:
         return True
     else:
