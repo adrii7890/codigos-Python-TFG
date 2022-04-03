@@ -1,4 +1,4 @@
-import math
+from math import gcd
 
 def Pollardp (n,x0,M):
     a=x0
@@ -9,7 +9,7 @@ def Pollardp (n,x0,M):
         a=(a**2-1)%n
         b=(b**2-1)%n
         b=(b**2-1)%n
-        d=math.gcd(a-b,n)
+        d=gcd(a-b,n)
         i+=1
     if d!=1 and d!=n:
         return [d,n/d]
