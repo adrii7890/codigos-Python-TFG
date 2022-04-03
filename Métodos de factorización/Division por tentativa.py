@@ -1,14 +1,3 @@
-import math
-
-
-def NRsuelo(n): #Calculo de la función suelo de la raiz cuadrada mediante el método de Newton
-    x = n
-    y = math.floor((x + 1) / 2)
-    while y < x:
-        x = y
-        y = math.floor((x + n / x) / 2)
-    return x
-
 def trialdiv(n):
     L=[]
     m=NRsuelo(n)
