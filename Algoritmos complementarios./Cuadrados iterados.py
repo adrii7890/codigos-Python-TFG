@@ -1,5 +1,5 @@
 
-def binladders(base, num, mod): #algoritmo de la exponenciación rápida (variante izquierda a derecha)
+def binladders(base, num, mod):             #algoritmo los cuadrados iterados
     acu=base
     binary=format(num,"b")
     i=1
