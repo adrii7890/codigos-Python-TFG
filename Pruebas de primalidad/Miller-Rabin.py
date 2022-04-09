@@ -1,3 +1,5 @@
+from random import randint
+
 def MR(n,k):
     j, d= 0, n-1
     while d%2==0:       #Descomponemos n-1 de la forma deseada
