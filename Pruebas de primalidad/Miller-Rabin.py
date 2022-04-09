@@ -9,7 +9,7 @@ def MR(n,k):
         if e!=1 and e!=n-1:              #Comprobamos que no es -1, si lo es pasamos a otra base
             i=1
             bool=True
-            while i<=j and bool==True:
+            while i<j and bool==True:
                 e=e**2%n
                 if e==n-1:
                     bool=False         #Si hay un -1 entonces pasa el test para esa base, seguimos con la siguiente
