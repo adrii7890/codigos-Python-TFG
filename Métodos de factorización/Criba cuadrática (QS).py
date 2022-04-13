@@ -1,6 +1,6 @@
 
 import math
-
+import algoritmos_complementarios
 def Bsmooth(n,B):
     smooth=True
     L=trialdiv(n)
@@ -39,7 +39,7 @@ def exp(n,B):
 def isprime(n):
     prime=True
     i=2
-    while i<=math.sqrt(n) and prime==True:
+    while i<=NRsuelo(n) and prime==True:
         if n%i==0:
             prime=False
         i+=1
