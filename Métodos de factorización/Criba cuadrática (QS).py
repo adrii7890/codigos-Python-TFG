@@ -1,6 +1,5 @@
+import algoritmos_complementarios as alg
 
-import math
-import algoritmos_complementarios
 def Bsmooth(n,B):
     smooth=True
     L=trialdiv(n)
@@ -39,17 +38,17 @@ def exp(n,B):
 def isprime(n):
     prime=True
     i=2
-    while i<=NRsuelo(n) and prime==True:
+    while i<=alg.NRsuelo(n) and prime==True:
         if n%i==0:
             prime=False
         i+=1
     return prime
 
-def basef (n,M):
+def basef (n,M):       #M es la cota para los elementos de la base
     B=[-1,2]
     i=3
     while i<=M:
-        if int((n**int((i-1)/2))%i)==1 and isprime(i)==True:  #criterio de Euler
+        if MR(i,6)==True and alg.jacobi(n,i)==1:    #Usamos la función jacobi(n) del módulo algoritmos_complementarios y el algoritmo de Miller-Rabin
             B.append(i)
         i+=1
     return B
@@ -58,11 +57,11 @@ def QS(n,M1,M2): #solo la primera parte del algoritmo, la "recolección de datos
     z=0
     w=0
     Base=basef(n,M2) #generamos la base de factores
-    S=[math.ceil(math.sqrt(n))]
+    S=[alg.NRsuelo(n)]
     #Generación de la lista S
     for i in range(1,M1):
-        S.append(math.ceil(math.sqrt(n))+i)
-        S.append(math.ceil(math.sqrt(n))-i)
+        S.append(alg.NRsuelo(n)+i)
+        S.append(alg.NRsuelo(n)-i)
     B = []
     Z = []
     W=[]
