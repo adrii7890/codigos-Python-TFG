@@ -1,4 +1,5 @@
 from random import randint
+import algoritmos_complementarios as alg
 
 def MR(n,k):
     j, d= 0, n-1
@@ -7,7 +8,7 @@ def MR(n,k):
         d//=2
     for _ in range(1,k):
         a=randint(2,n-1)
-        e=binladders(a,d,n)
+        e=alg.binladders(a,d,n)
         if e!=1 and e!=n-1:              #Comprobamos que no es -1, si lo es pasamos a otra base
             i=1
             bool=True
