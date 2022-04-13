@@ -17,4 +17,4 @@ def PollardpB (n,x0,M):
     if d!=1 and d!=n:
         return [d,int(n/d)]
     else:
-        return 0
+        return 0    #devuelve 0 si no encuentra ningún factor
