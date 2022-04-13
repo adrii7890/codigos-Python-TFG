@@ -1,33 +1,11 @@
 import math
-from random import randrange
-
-def  trialdiv(n):
-    L=[]
-    m=math.ceil(math.sqrt(n))
-    for i in  range (2,m+1):
-        while n%i==0  and n!=1:
-            L.append(i)
-            n=n/i
-    if n==1:
-        return L
-    else:
-        L.append(int(n))
-        return L 
-    
-def isprime(n): #decide si un número es primo
-    prime=True
-    i=2
-    while i<=math.sqrt(n) and prime==True:
-        if n%i==0:
-            prime=False
-        i+=1
-    return prime
+from random import randint
     
 def basef (M): #genera la base de factores 
     B=[2]
     i=3
     while i<=M:
-        if isprime(i)==True:
+        if MR(i,6)==True:   #utilizamos el test de Miller-Rabin para verificar que si i es primo (la probabilidad de falso positivo es muy pequeña)
             B.append(i)
         i+=1
     return B
@@ -77,7 +55,7 @@ def Dixon(n,N,M): #primera parte del método de Dixon, la "recolección de datos
     L=[]
     #Generación de la lista aleatoria
     while len(L)<N:
-        L.append(random.randrange(n)) #aleatorios en el intervalo [1,n]
+        L.append(randint(1,n)) #aleatorios en el intervalo [1,n]
 
     B = []
     Z = []
