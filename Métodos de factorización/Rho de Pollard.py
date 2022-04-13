@@ -14,4 +14,4 @@ def Pollardp (n,x0,M):
     if d!=1 and d!=n:
         return [d,n/d]
     else:
-        return 0 #devuelve 0 si el método falla
+        return 0    #devuelve 0 si el método falla
