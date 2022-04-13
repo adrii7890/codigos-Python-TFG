@@ -11,4 +11,4 @@ def Pollardp1 (n,H):
     if d!=1 and d!=n:
         return [d, int(n/d)]
     else:
-        return 0
+        return 0    #devuelve 0 si no encontramos un factor al terminar las H iteraciones
