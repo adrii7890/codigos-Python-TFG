@@ -1,4 +1,4 @@
-import Algortimos_complementarios as alg
+import algortimos_complementarios as alg
 
 def Lucastest(n):
     D=5
