@@ -1,6 +1,6 @@
 import algortimos_complementarios as alg
 
-def Lucastest(n):
+def LucasStest(n):
     D=5
     i=1
     while alg.jacobi(D,n)==1:
