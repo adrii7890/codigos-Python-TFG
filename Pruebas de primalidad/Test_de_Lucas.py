@@ -5,7 +5,7 @@ def TestLucas(n,L): #L es una lista con los divisores de n-1
     while a<n:     
         i=0
         bool=True
-        if alg.binladders(2, n-1,n)!=1:     #usamos el algoritmo de la exponenciación binaria, cuyo código se puede ver también en este repositorio
+        if alg.binladders(2, n-1,n)!=1:     #usamos el algoritmo de los cuadrados iterados, cuyo código se puede ver también en este repositorio
             return False
         else:
             while i<len(L) and bool==True:
