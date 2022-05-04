@@ -49,7 +49,7 @@ def jacobi(a,n):
  
     return sol
 
-def suclucas(n,r, P,Q): #calccula U_r(n) y V_(r) para P y Q dados
+def suclucas(n,r, P,Q): #calcula U_r(n) y V_(r) para P y Q dados
 
     v1 = format(n,"b")
     v2 = format(r,"b")
