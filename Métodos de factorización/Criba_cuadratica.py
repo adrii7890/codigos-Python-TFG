@@ -35,15 +35,6 @@ def exp(n,B):
         E.append(0)
     return E        
 
-def isprime(n):
-    prime=True
-    i=2
-    while i<=alg.NRsuelo(n) and prime==True:
-        if n%i==0:
-            prime=False
-        i+=1
-    return prime
-
 def basef (n,M):       #M es la cota para los elementos de la base
     B=[-1,2]
     i=3
@@ -57,6 +48,7 @@ def QS(n,M1,M2): #solo la primera parte del algoritmo, la "recolección de datos
     z=0
     w=0
     Base=basef(n,M2) #generamos la base de factores
+    print("B=",Base) #sacamos por pantalla la base de factores
     S=[alg.NRsuelo(n)]
     #Generación de la lista S
     for i in range(1,M1):
@@ -64,15 +56,17 @@ def QS(n,M1,M2): #solo la primera parte del algoritmo, la "recolección de datos
         S.append(alg.NRsuelo(n)-i)
     B = []
     Z = []
-    W=[]
+    W= []
     i=0
     #Búsqueda de números lisos para nuestra base de factores
     while i<len(S) and len(Base)>=len(Z):
         z=S[i]
-        w=z**2-n 
+        w=z**2-n
         if Bsmooth(w,Base):
+            print(z,"^2=",w,"(mod", n,")") #sacamos por pantalla los que cumplen la condición de B-lisos
             Z.append(z)
             W.append(w) 
             B.append(exp(w,Base)) #aqui tendríamos la matriz de exponentes
         i+=1
+    print("A=",B) #sacamos la matriz de exponentes módulo 2
 
