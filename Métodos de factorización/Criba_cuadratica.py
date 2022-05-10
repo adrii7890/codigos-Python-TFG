@@ -3,7 +3,7 @@ import algoritmos_complementarios as alg
 def  trialdiv(n):
     L=[]
     if n<0:
-        n=math.fabs(n)
+        n=-n
         L.append(-1)
     m=alg.NRfloor(n)
     for i in  range (2,m+1):
