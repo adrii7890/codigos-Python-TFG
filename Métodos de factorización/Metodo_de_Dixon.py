@@ -1,6 +1,22 @@
 import algoritmos_complementarios as alg
 from random import randint
     
+def  trialdiv(n):
+    L=[]
+    if n<0:
+        n=math.fabs(n)
+        L.append(-1)
+    m=math.ceil(math.sqrt(math.fabs(n)))
+    for i in  range (2,m+1):
+        while n%i==0  and n!=1:
+            L.append(i)
+            n=n/i
+    if n==1:
+        return L
+    else:
+        L.append(int(n))
+        return L 
+    
 def basef (M): #genera la base de factores 
     B=[2]
     i=3
@@ -52,6 +68,7 @@ def Dixon(n,N,M): #primera parte del método de Dixon, la "recolección de datos
     w=0
     # Base de factores 
     base = basef(M)
+    print("B=",base) #sacamos por pantalla la base de factores
     L=[]
     #Generación de la lista aleatoria
     while len(L)<N:
@@ -66,8 +83,10 @@ def Dixon(n,N,M): #primera parte del método de Dixon, la "recolección de datos
         z=L[i]
         w=z**2%n 
         if Bsmooth(w,M)==True:
+            print(z,"^2=",w,"(mod", n,")")   #sacamos por pantalla los que son B-lisos
             Z.append(z)
             W.append(w)
             B.append(exp(w,base))
         i+=1
+    print("A=",B) #imprimimos la matriz de exponentes
 #tendríamos almacenada en B la matriz con los exponentes
