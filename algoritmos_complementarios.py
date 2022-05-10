@@ -9,14 +9,6 @@ def NRfloor(n): #Calculo de la funci√≥n suelo de la raiz cuadrada mediante el m√
         y = math.floor((x + n / x) / 2)
     return x
 
-def NRsuelo(n): 
-    x = n
-    y = floor((x + 1) / 2)
-    while y < x:
-        x = y
-        y = floor((x + n / x) / 2)
-    return x
-
 def trialdiv(n): #modificado limite 1000 (para Baillie_PSW)
     L=[]
     m=NRsuelo(n)
