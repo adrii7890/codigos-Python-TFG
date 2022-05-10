@@ -48,7 +48,7 @@ def basef (n,M):       #M es la cota para los elementos de la base
     B=[-1,2]
     i=3
     while i<=M:
-        if MR(i,6)==True and alg.jacobi(n,i)==1:    #Usamos la función jacobi(n) del módulo algoritmos_complementarios y el algoritmo de Miller-Rabin
+        if alg.MR(i,6)==True and alg.jacobi(n,i)==1:    #Usamos la función jacobi(n) del módulo algoritmos_complementarios y el algoritmo de Miller-Rabin
             B.append(i)
         i+=1
     return B
