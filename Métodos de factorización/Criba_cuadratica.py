@@ -1,5 +1,21 @@
 import algoritmos_complementarios as alg
 
+def  trialdiv(n):
+    L=[]
+    if n<0:
+        n=math.fabs(n)
+        L.append(-1)
+    m=math.ceil(math.sqrt(math.fabs(n)))
+    for i in  range (2,m+1):
+        while n%i==0  and n!=1:
+            L.append(i)
+            n=n/i
+    if n==1:
+        return L
+    else:
+        L.append(int(n))
+        return L 
+    
 def Bsmooth(n,B):
     smooth=True
     L=trialdiv(n)
