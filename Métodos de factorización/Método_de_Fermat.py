@@ -5,7 +5,7 @@ def isPerfectSquare(num): #determina si num es un cuadrado perfecto
 
 
 def FermatFact1(n,M):
-    x=alg.NRsuelo(n)+1 
+    x=alg.NRsuelo(n)
     j=1
     while j<=M and isPerfectSquare(x**2-n)==False:
         x+=1
