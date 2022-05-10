@@ -1,11 +1,11 @@
-import math
+import algoritmos_complementarios as alg
 from random import randint
     
 def basef (M): #genera la base de factores 
     B=[2]
     i=3
     while i<=M:
-        if MR(i,6)==True:   #utilizamos el test de Miller-Rabin para verificar que si i es primo (la probabilidad de falso positivo es muy pequeña)
+        if alg.MR(i,4)==True:   #utilizamos el test de Miller-Rabin para verificar que si i es primo (la probabilidad de falso positivo es muy pequeña)
             B.append(i)
         i+=1
     return B
