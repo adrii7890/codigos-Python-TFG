@@ -105,7 +105,7 @@ def MR(n,k): #Miller-Rabin para el entero n, k es el número de bases para las q
             
     return True
 
-def MR2(n): #modificado para la base a=2
+def MR2(n): #Miller-Rabin modificado para la base a=2
     j, d= 0, n-1
     while d%2==0:
         j+=1
