@@ -1,7 +1,7 @@
 from random import randint
 import algoritmos_complementarios as alg
 
-def MR(n,k):
+def MR(n,k): #número al que se le pasa el test y número de bases a probar
     j, d= 0, n-1
     while d%2==0:       #Descomponemos n-1 de la forma deseada
         j+=1
