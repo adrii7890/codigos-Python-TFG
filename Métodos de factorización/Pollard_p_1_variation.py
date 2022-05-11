@@ -1,7 +1,7 @@
 from math import gcd
 import Algoritmos_complementarios as alg
 
-def Pollardp1M (n,H):
+def Pollardp1M (n,H): #número a factorizar y H es el número máximo de iteraciones del método
     a=2
     M=2
     d=1
