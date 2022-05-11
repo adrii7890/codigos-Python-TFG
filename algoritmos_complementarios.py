@@ -104,3 +104,23 @@ def MR(n,k): #Miller-Rabin para el entero n, k es el número de bases para las q
                 return False
             
     return True
+
+def MR2(n): #modificado para la base a=2
+    j, d= 0, n-1
+    while d%2==0:
+        j+=1
+        d//=2
+    a=2
+    e=binladders(a,d,n)
+    if e!=1 and e!=n-1:             
+        i=1
+        bool=True
+        while i<j and bool==True:
+            e=e**2%n
+            if e==n-1:
+                bool=False       
+            i+=1
+        if bool==True:              
+            return False
+            
+    return True
