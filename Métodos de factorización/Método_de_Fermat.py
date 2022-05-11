@@ -4,7 +4,7 @@ def isPerfectSquare(num): #determina si num es un cuadrado perfecto
         return alg.NRfloor(num)**2 == num
 
 
-def FermatFact1(n,M):
+def FermatFact1(n,M): #número a factorizar y número máximo de iteraciones del método
     x=alg.NRfloor(n)
     j=1
     while j<=M and isPerfectSquare(x**2-n)==False:
