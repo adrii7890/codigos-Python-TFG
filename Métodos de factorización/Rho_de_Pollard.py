@@ -12,6 +12,6 @@ def Pollardp (n,x0,M):
         d=gcd(a-b,n)
         i+=1
     if d!=1 and d!=n:
-        return [d,n/d]
+        return [d,n//d]
     else:
         return 0    #devuelve 0 si el método falla
