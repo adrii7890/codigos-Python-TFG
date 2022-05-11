@@ -9,6 +9,6 @@ def Pollardp1 (n,H):
         d=gcd(a-1,n)
         M+=1
     if d!=1 and d!=n:
-        return [d, int(n/d)]
+        return [d, n//d]
     else:
         return 0    #devuelve 0 si no encontramos un factor al terminar las H iteraciones
