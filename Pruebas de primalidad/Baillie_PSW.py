@@ -2,7 +2,7 @@
 import algoritmos_complementarios as alg
 import Prueba_fuerte_de_Lucas as LucasS
 
-def baillie_PSW(n):
+def baillie_PSW(n): #número al que se le aplicará el test
     if alg.trialdiv(n)==False:
         return False
     elif alg.MR2(n)==False:
