@@ -62,8 +62,9 @@ def exp(n,B): #función que devuelve el exponente módulo dos de un número con 
         E.append(0)
     return E        
 
+#primera parte del método de Dixon, la "recolección de datos". 
 
-def Dixon(n,N,M): #primera parte del método de Dixon, la "recolección de datos". 
+def Dixon(n,N,M):  #número a factorizar, M es la cota para la base de factores y N es el número de valores aleatorios que se generarán
     z=0                         #Se piden como entrada el número a factorizar, el número de elementos aleatorios con los que trabajaremos y la cota para la base de factores.
     w=0
     # Base de factores 
