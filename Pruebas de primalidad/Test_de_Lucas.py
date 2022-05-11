@@ -1,6 +1,6 @@
 import algoritmos_complementarios as alg
 
-def TestLucas(n,L): #L es una lista con los divisores de n-1
+def TestLucas(n,L): #L es una lista con los divisores de n-1 y n es el número que se pretende testear
     a=2
     while a<n:     
         i=0
