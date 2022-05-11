@@ -12,7 +12,7 @@ def LucasStest(n): #número al que se le pasa la prueba
     while d%2==0:
         s+=1
         d//=2
-    L=alg.suclucas(n,d,P,Q)
+    L=alg.suclucas(n,d,P,Q) #sucesiones de Lucas hasta el término d
     if L[0]==0 or L[1]==0:
         return True
     else:
