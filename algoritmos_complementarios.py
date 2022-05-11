@@ -17,7 +17,7 @@ def trialdiv(n): #modificado limite 1000 (para Baillie_PSW)
             return False
     return True
 
-def binladders(base, num, mod):
+def binladders(base, num, mod): #los argumentos son base, exponente y módulo, en ese orden
     acu=base
     binary=format(num,"b")
     i=1
@@ -28,7 +28,7 @@ def binladders(base, num, mod):
         i+=1
     return acu
   
-def jacobi(a,n):
+def jacobi(a,n): #calcula (a/n)
     sol=0
     if a==0:
         if n==1:
@@ -58,7 +58,7 @@ def jacobi(a,n):
  
     return sol
 
-def suclucas(n,r, P,Q):
+def suclucas(n,r, P,Q): #sucesiones de Lucas con parámetros P,Q hasta el término r para el entero n
     if r==1:
         return [1,1]
     else:
@@ -82,9 +82,9 @@ def suclucas(n,r, P,Q):
                 U2 = (P*U2**2 - 2*Q*U1aux*U2)%n
                 U1aux=U1
             if k==r:
-                return [U1,(2*U2-P*U1)%n]
+                return [U1,(2*U2-P*U1)%n]  #devuelve U_r(n) y V_r(n)
      
-def MR(n,k):
+def MR(n,k): #Miller-Rabin para el entero n, k es el número de bases para las que deseamos que n pase el test
     j, d= 0, n-1
     while d%2==0:
         j+=1
