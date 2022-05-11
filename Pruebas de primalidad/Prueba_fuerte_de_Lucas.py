@@ -17,7 +17,7 @@ def LucasStest(n):
         return True
     else:
         r=2
-        V=(L[1]**2-2*(Q**d))%n
+        V=(L[1]**2)%n-(2*(alg.binladders(Q,d,n)))
         if V==0:
             return True
         chi=True
