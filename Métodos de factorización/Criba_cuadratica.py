@@ -60,7 +60,9 @@ def basef (n,M):       #M es la cota para los elementos de la base
         i+=1
     return B
 
-def QS(n,M1,M2): #solo la primera parte del algoritmo, la "recolección de datos"
+#solo la primera parte del algoritmo, la "recolección de datos"
+
+def QS(n,M1,M2): #número a factorizar, M2 es la cota para la base de factores
     z=0
     w=0
     Base=basef(n,M2) #generamos la base de factores
