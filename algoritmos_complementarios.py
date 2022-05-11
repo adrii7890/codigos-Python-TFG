@@ -60,9 +60,7 @@ def suclucas(n,r, P,Q): #sucesiones de Lucas con parámetros P,Q hasta el térmi
     if r==1:
         return [1,1]
     else:
-        v1 = format(n,"b")
         v2 = format(r,"b")
-        l1 = len(v1)
         l2 = len(v2)
         U1 = 1
         U2 = P
