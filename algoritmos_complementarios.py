@@ -10,8 +10,6 @@ def NRfloor(n): #Calculo de la funci√≥n suelo de la raiz cuadrada mediante el m√
     return x
 
 def trialdiv(n): #modificado limite 1000 (para Baillie_PSW)
-    L=[]
-    m=NRfloor(n)
     for i in range (2,min(NRfloor(n), 1000)):
         if n%i==0:
             return False
