@@ -1,6 +1,6 @@
 from math import gcd
 
-def PollardpB (n,x0,M):
+def PollardpB (n,x0,M): #número a factorizar, valor inicial (en este caso 2 sería un buen valor) y número máximo de iteraciones
     a=x0
     b=x0
     i=1
