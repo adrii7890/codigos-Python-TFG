@@ -65,11 +65,11 @@ def QS(n,M1,M2): #solo la primera parte del algoritmo, la "recolección de datos
     w=0
     Base=basef(n,M2) #generamos la base de factores
     print("B=",Base) #sacamos por pantalla la base de factores
-    S=[alg.NRsuelo(n)]
+    S=[alg.NRfloor(n)]
     #Generación de la lista S
     for i in range(1,M1):
-        S.append(alg.NRsuelo(n)+i)
-        S.append(alg.NRsuelo(n)-i)
+        S.append(alg.NRfloor(n)+i)
+        S.append(alg.NRfloor(n)-i)
     B = []
     Z = []
     W= []
@@ -85,4 +85,3 @@ def QS(n,M1,M2): #solo la primera parte del algoritmo, la "recolección de datos
             B.append(exp(w,Base)) #aqui tendríamos la matriz de exponentes
         i+=1
     print("A=",B) #sacamos la matriz de exponentes módulo 2
-
