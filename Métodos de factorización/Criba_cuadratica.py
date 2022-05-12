@@ -86,4 +86,6 @@ def QS(n,M1,M2): #número a factorizar, M2 es la cota para la base de factores
             W.append(w) 
             B.append(exp(w,Base)) #aqui tendríamos la matriz de exponentes
         i+=1
+    print("Z=",Z)
+    print("W=",W)
     print("A=",B) #sacamos la matriz de exponentes módulo 2
