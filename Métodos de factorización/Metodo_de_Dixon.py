@@ -89,5 +89,7 @@ def Dixon(n,N,M):  #número a factorizar, M es la cota para la base de factores 
             W.append(w)
             B.append(exp(w,base))
         i+=1
+    print("Z=",Z)
+    print("W=",W)
     print("A=",B) #imprimimos la matriz de exponentes
 #tendríamos almacenada en B la matriz con los exponentes
