@@ -1,4 +1,4 @@
-Repositorio complementario al TFG realizado por Adrián González, del [grado en matemáticas](https://grados.ugr.es/matematicas/) de la UGR. 
+Repositorio complementario al TFG realizado por Adrián González, del [Grado en Matemáticas](https://grados.ugr.es/matematicas/) de la UGR. 
 
 Los códigos que aquí se presentan corresponden a algoritmos expuestos en mi TFG. Tratan sobre métodos de factorización de enteros y pruebas de primalidad. Además de esto necesitaremos pequeños algoritmos adicionales para poder programar de una manera más limpia, con los cuales crearemos un pequeño módulo llamado [*algoritmos_complementarios*](https://github.com/adrii7890/codigos-Python-TFG/blob/main/algoritmos_complementarios.py) que importaremos cuando sea necesario. 
 
