@@ -1,6 +1,6 @@
 ## Métodos de factorización y pruebas de primalidad de enteros
 
-Repositorio complementario al TFG realizado por Adrián González, del [Grado en Matemáticas](https://grados.ugr.es/matematicas/) de la UGR. 
+Este es un repositorio complementario al TFG realizado por Adrián González, del [Grado en Matemáticas](https://grados.ugr.es/matematicas/) de la UGR. 
 
 En el directorio `codigo fuente` se encuentran las implementaciones en python correspondientes a algoritmos expuestos en mi TFG. Tratan sobre métodos de factorización de enteros y pruebas de primalidad. Además de esto necesitaremos pequeños algoritmos adicionales para poder programar de una manera más limpia, con los cuales crearemos un pequeño módulo llamado *algoritmos_complementarios* que importaremos cuando sea necesario. 
 
