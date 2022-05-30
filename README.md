@@ -1,4 +1,4 @@
-## Métodos de factoriazción y pruebas de primalidad de enteros
+## Métodos de factorización y pruebas de primalidad de enteros
 
 Repositorio complementario al TFG realizado por Adrián González, del [Grado en Matemáticas](https://grados.ugr.es/matematicas/) de la UGR. 
 
