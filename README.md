@@ -2,7 +2,7 @@
 
 Este es un repositorio complementario al TFG realizado por Adrián González, del [Grado en Matemáticas](https://grados.ugr.es/matematicas/) de la UGR. 
 
-En el directorio `codigo fuente` se encuentran las implementaciones en python correspondientes a algoritmos expuestos en mi TFG que tratan sobre ***métodos de factorización de enteros y pruebas de primalidad***. 
+En el directorio `codigo fuente` se encuentran las implementaciones en python correspondientes a algoritmos expuestos en mi TFG que tratan sobre **métodos de factorización de enteros y pruebas de primalidad**. 
 
 Además de esto necesitaremos pequeños algoritmos adicionales para poder programar de una manera más limpia, con los cuales crearemos un pequeño módulo llamado [*algoritmos_complementarios.py*](https://github.com/adrii7890/codigos-Python-TFG/blob/main/codigo%20fuente/algoritmos_complementarios.py) que importaremos cuando sea necesario. 
 
